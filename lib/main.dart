@@ -103,6 +103,7 @@ class MyApp extends StatelessWidget {
            SizedBox(width: 10,),
            Icon(Icons.notifications),
            SizedBox(width: 10,),
+           SizedBox(width: 10,),
            Icon(Icons.menu)
          ],
        )
