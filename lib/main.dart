@@ -35,13 +35,9 @@ import 'package:flutter/material.dart';
 // import 'package:get/get_navigation/src/root/get_material_app.dart';
 // import 'package:untitled/view/counter-view/counter-view.dart';
 
-import 'firebase_options.dart';
 
-void main() async{
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+void main() {
+
   runApp(MyApp());
 }
 
@@ -68,7 +64,39 @@ class MyApp extends StatelessWidget {
       //  backgroundColor: Colors.grey,
 
           // 2nd property:-
-          body:
+          body:Column(children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                CircleAvatar(
+                    backgroundColor: Colors.black,
+                    child: Icon(Icons.home,color: Colors.white,)),
+
+                CircleAvatar(child: Icon(Icons.video_camera_back)),
+
+                Icon(Icons.group),
+                Icon(Icons.local_print_shop),
+                Icon(Icons.notifications),
+                Icon(Icons.menu)
+              ],
+            ),
+           SizedBox(height: 30,),
+            Row(
+              children: [
+                CircleAvatar(),
+                Container(
+                  height: 40,
+                  width: 300,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50),
+                    border: Border.all()
+                  ),
+                  child: Center(child: Text('Search some thing'),),
+                ),
+                Icon(Icons.photo_album_outlined)
+              ],
+            )
+          ],)
               // widgets:- single child widget
           // multi chidl widgets
 // parent and child
@@ -89,24 +117,7 @@ class MyApp extends StatelessWidget {
           //   //Text('data sajfhd idshf kisdhf sidhf sakidfh dskhif sdkfh sdkfh sdkfh sdkfh sdkfh dskf sdkfjds flsdkjfds '),
           //
           // ))
-       Row(
-         children: [
-           CircleAvatar(
-               backgroundColor: Colors.black,
-               child: Icon(Icons.home,color: Colors.white,)),
-           SizedBox(width: 10,),
-           CircleAvatar(child: Icon(Icons.video_camera_back)),
-           SizedBox(width: 10,),
-           Icon(Icons.group),
-           SizedBox(width: 10,),
-           Icon(Icons.local_print_shop),
-           SizedBox(width: 10,),
-           Icon(Icons.notifications),
-           SizedBox(width: 10,),
-           SizedBox(width: 10,),
-           Icon(Icons.menu)
-         ],
-       )
+
 
         // Center(
         //   child: Column(

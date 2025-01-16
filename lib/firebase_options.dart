@@ -57,19 +57,21 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBKJrfMls60dWHnDgdTx_WvFDijdR7kN3s',
-    appId: '1:63446976849:android:7dd53851d078302c282b70',
-    messagingSenderId: '63446976849',
-    projectId: 'diary-system',
-    storageBucket: 'diary-system.firebasestorage.app',
+    apiKey: 'AIzaSyDMosn-QJClwW4bTu0Jg0JQdyniOowY-Bo',
+    appId: '1:725088951307:android:d2789ca9a60c22de353b0e',
+    messagingSenderId: '725088951307',
+    projectId: 'roomoree-9c05c',
+    storageBucket: 'roomoree-9c05c.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAqG4fzUMksoi3v9g2K5RQVIht1689xqdU',
-    appId: '1:63446976849:ios:ffdb74da55e73d55282b70',
-    messagingSenderId: '63446976849',
-    projectId: 'diary-system',
-    storageBucket: 'diary-system.firebasestorage.app',
+    apiKey: 'AIzaSyDzQ4ZbGI3VB5xv3fQui8UFhxtg13Y5j-4',
+    appId: '1:725088951307:ios:488653478ab55b8d353b0e',
+    messagingSenderId: '725088951307',
+    projectId: 'roomoree-9c05c',
+    storageBucket: 'roomoree-9c05c.firebasestorage.app',
+    iosClientId: '725088951307-vanv6ags3sf9uqkj9fiprdtefnlvjbp0.apps.googleusercontent.com',
     iosBundleId: 'com.example.untitled',
   );
+
 }
